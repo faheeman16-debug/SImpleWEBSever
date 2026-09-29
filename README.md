@@ -1,6 +1,6 @@
 # SImpleWEBSever
 # EX01 Developing a Simple Webserver
-## Date:
+## Date:29.09.2026
 
 ## AIM:
 To develop a simple webserver to serve html pages and display the Device Specifications of your Laptop.
@@ -37,9 +37,19 @@ Start the server script and check for errors.
 Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 
 ## PROGRAM:
+from http.server import HTTPServer, SimpleHTTPRequestHandler
 
+server = HTTPServer(("127.0.0.1", 8000), SimpleHTTPRequestHandler)
+
+print("Server running at http://127.0.0.1:8000")
+print("Register No: 26001912")
+print("Name: Faheema")
+
+server.serve_forever()
 
 ## OUTPUT:
+![alt text]({0CD6DE29-CE10-42D3-AC39-E447A896B116}.png)
+![alt text]({2952207D-8001-4CBD-85E6-37538BAC5105}.png)
 
 
 ## RESULT:
